@@ -1,22 +1,25 @@
-'use client';
-import { useState } from 'react';
-import Image from 'next/image';
+"use client";
 
-export default function page() {
-  const [showImage, setShowImage] = useState(false);
+import Image from "next/image";
 
-  const peliculas = [];
+export default function About() {
 
   return (
-    <div className='max-w-[1200px] my-8 mx-auto pt-11'>
-      <div class='grid'>
-        <div class='image_container col_6 '>
-          
-        </div>
-        <div class='content_container col_6 '>
-          
-        </div>
-      </div>
-    </div>
+    <main className="container mx-auto p-4 flex flex-col items-center space-y-6">
+      <h1 className="text-3xl font-bold">Augusto Lupo</h1>
+      <p className="text-center max-w-x3">
+        Soy estudiante de diseño multimedial. Naci el 22-04-2003. Trabajo como realizador audiovisual, mas a la parte de realizacion de streaming en dos empresas: showThisNow y El Trece Tv
+      </p>
+
+      <a
+        href="https://www.linkedin.com/in/augusto-lupo/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-blue-500 hover:underline"
+      >
+        Mi LinkedIn
+      </a>
+    </main>
   );
 }
+
